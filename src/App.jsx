@@ -32,6 +32,7 @@ function OTPGenerator() {
  
    // Copy to clipboard
    const handleCopy = () => {
+     if (!otp) return;
      navigator.clipboard.writeText(otp);
      setCopied(true);
    };
